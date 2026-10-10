@@ -152,6 +152,7 @@ def MarvellousClassifier(DataPath):
     plt.xticks(list(K_values))
 
     # Save graph inside Wine_Prediction folder
+    # Save graph inside project folder
     GraphPath = ProjectPath / "K_vs_Accuracy.png"
 
     plt.savefig(GraphPath, dpi=300, bbox_inches="tight")
@@ -216,6 +217,7 @@ def MarvellousClassifier(DataPath):
     plt.title("Wine Classification - Confusion Matrix")
 
     # Save confusion matrix image inside Wine_Prediction folder
+    # Save confusion matrix image inside project folder
     MatrixPath = ProjectPath / "Confusion_Matrix.png"
 
     plt.savefig(MatrixPath, dpi=300, bbox_inches="tight")
